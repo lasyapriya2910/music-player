@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 2rem 0;
+    font-size: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 .5rem 1rem #757373;
+    color: #fff;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container input[type="text"] {
+    margin-right: 15px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px 0 0 3px;
+  }
+  .search-container i {
+    background-color: #1d1c1c;
+    color: #fff;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 30px;
+    size: 2px;
+  }
+.container{
+    background: #222;
+}
+.container .music-container{
+    display: flex;
+align-items: center;
+flex-flow: column;
+}
+.container .music-container .box{
+    height:16rem;
+    width:80%;
+    display: flex;
+    align-items: center;
+    background:#f5f4f4;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem #000;
+    overflow: hidden;
+    margin: 2rem;
+}
+.container .music-container .box .image{
+    height: 100%;
+    width:25%;
+}
+.container .music-container .box .image img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    margin-left: 1px;
+    margin-top: 3px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    box-shadow: #222;
+}
+.container .music-container .box .music{
+    width:75%;
+    padding: 20px;
+}
+.container .music-container .box .music p{
+    font-size: 30px;
+    text-align: center;
+    font-family: cursive;
+}
+.container .music-container .box .music h5{
+    font-family: cursive;
+    text-align: center;
+    font-size: 15px;
+}
+.container .music-container .box .music audio{
+    width:100%;
+    outline:none;
+}
+.container .music-container .box .music audio::-webkit-media-controls-enclosure{
+    background: none;
+}
+@media (max-width:600px){
+
+    .container .music-container .box{
+        height: 50rem;
+        width: 90%;
+        flex-flow: column;
+    }
+    .container .music-container .box .image{
+        height: 60%;
+        width: 80%;
+    }
+}
